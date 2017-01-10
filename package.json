@@ -1,0 +1,26 @@
+{
+  "name": "api-neilab",
+  "version": "0.1.0",
+  "description": "Api for Neilab",
+  "main": "api.js",
+  "scripts": {
+    "start": "nodemon node api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neijul/Neilab.git"
+  },
+  "author": "Julien Paris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neijul/Neilab/issues"
+  },
+  "homepage": "https://github.com/Neijul/Neilab#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
