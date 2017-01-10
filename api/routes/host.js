@@ -3,6 +3,8 @@ const token = require('../middlewares/token.js')
 
 let host = express.Router()
 
+host.route('/hosts')
+
 .get(token.checkToken, (req, res) => {
   res.json({ message: `Affiche tous les hébergement web` })
 })

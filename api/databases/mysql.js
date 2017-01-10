@@ -5,7 +5,7 @@ var database = {
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'api'
+    database: 'api_neilab'
   })
 }
 
