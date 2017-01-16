@@ -1,4 +1,5 @@
 const express = require('express')
+const token = require('../middlewares/token.js')
 const neiPerms = require('../middlewares/neiPerms.js')
 
 let team = express.Router()
@@ -15,7 +16,7 @@ team.route('/team/:id')
   res.json({ message: `Affiche les informations du membre ${req.params.id}` })
 })
 
-.put(neiPerms.admin, (req, res) => {
+.put(token.isValidToken, neiPerms.admin, (req, res) => {
   res.json({ message: `Modifie les information du membre ${req.params.id}` })
 })
 

@@ -1,12 +1,10 @@
 const mysql = require('mysql')
 
-var database = {
+export var database = {
   connect: mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'root',
+    password: '',
     database: 'api_neilab'
   })
 }
-
-module.exports = database

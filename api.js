@@ -8,7 +8,6 @@ api.use(bodyParser.json())
 
 // Routes
 api.use(require('./api/routes/auth.js'))
-api.use(require('./api/routes/host.js'))
 api.use(require('./api/routes/team.js'))
 
 api.listen(8080)
