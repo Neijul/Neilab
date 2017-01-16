@@ -4,7 +4,8 @@
   "description": "Api for Neilab",
   "main": "api.js",
   "scripts": {
-    "start": "nodemon api.js"
+    "start": "NODE_ENV=production node api.js",
+	  "test": "nodemon api.js"
   },
   "repository": {
     "type": "git",
