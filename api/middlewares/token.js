@@ -5,7 +5,7 @@ let getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-var token = {
+export var token = {
   uid: (len) => {
     let buf = []
     let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
@@ -42,7 +42,7 @@ var token = {
                        ON U.tokenId = T.id
                        WHERE T.accessToken = ?`
 
-      database.connect.query(statement, [token], (err, result) => {
+      mysql.connect.query(statement, [token], (err, result) => {
         if (err) throw err
 
         if (result[0]) {
@@ -63,5 +63,3 @@ var token = {
     }
   }
 }
-
-module.exports = token
